@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/roudway"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/finalrcv" />
+
+    <Button
+        android:id="@+id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/signleft"
+         />
+
+    <Button
+        android:id="@+id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/signright"
+         />
+
+    <ImageView
+        android:id="@+id/heart1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/heart1"
+        android:layout_alignBaseline="@+id/heart1"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/heart2"
+        android:layout_alignBaseline="@+id/heart2"
+        android:src="@drawable/heart" />
+
+</RelativeLayout>
